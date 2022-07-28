@@ -1,0 +1,71 @@
+.main {
+    position: relative;
+    max-width: 330px;
+    min-height: 330px;
+    padding: 20px 18px 0;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.advice-number {
+    font-size: .9rem;
+    color: var(--primary-color);
+    letter-spacing: 3px;
+}
+
+.advice {
+    min-height: 80px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+}
+
+.desktop {
+    display: none;
+}
+
+.btn {
+    position: absolute;
+    bottom: -35px;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+@media (hover: hover) {
+
+    .btn:hover {
+        cursor: pointer;
+        box-shadow: 0 0 15px var(--primary-color);
+    }
+}
+
+@media screen and (max-width: 355px) {
+
+    .main {
+        max-width: 310px;
+        min-height: 310px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media screen and (min-width: 860px) {
+
+    .main {
+        min-width: 480px;
+        min-height: 290px;
+    }
+
+    .desktop {
+        display: initial;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
